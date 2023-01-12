@@ -79,7 +79,7 @@ A list of relevant skills: List the programming languages, frameworks, and tools
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">No client yet build</a></li>
+    <li><a href="#">HTML and CSS</a></li>
   </ul>
 </details>
 
@@ -115,7 +115,7 @@ A list of relevant skills: List the programming languages, frameworks, and tools
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](No live demo yet deployed.)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,16 +127,21 @@ A new developer can get the project from my Github repo link i shall provide.
 
 To get a local copy up and running, follow these steps.
 
+<!-- 
+go to https://github.com/stephenkati/Portfolio-setup-and-mobile-first 
+
+clone or download the project
+
+Run it in your favourite browser
+ -->
+
 ### Prerequisites
 
 In order to run this project you need:
 
 <!--
-Example command:
-
-```sh
- gem install rails
-```
+code editor
+Browser
  -->
 
 ### Setup
@@ -144,12 +149,15 @@ Example command:
 Clone this repository to your desired folder:
 
 <!--
-Example commands:
+In the File menu, click Clone Repository.
 
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
+Click the tab that corresponds to the location of the repository you want to clone. You can also click URL to manually enter the repository location.
+
+Choose the repository you want to clone from the list.
+
+Click Choose... and navigate to a local path where you want to clone the repository.
+
+Click Clone.
 --->
 
 ### Install
@@ -157,12 +165,7 @@ Example commands:
 Install this project with:
 
 <!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
+Download the project from github and run it in your browser.
 --->
 
 ### Usage
@@ -170,11 +173,9 @@ Example command:
 To run the project, execute the following command:
 
 <!--
-Example command:
-
-```sh
-  rails server
-```
+Click go live on your live server
+or
+write the exact location of the file on your browser and choose index.html file
 --->
 
 ### Run tests
@@ -182,11 +183,7 @@ Example command:
 To run tests, run the following command:
 
 <!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
+Use linters to check for errors. Html and css linters are already added.
 --->
 
 ### Deployment
@@ -194,18 +191,14 @@ Example command:
 You can deploy this project using:
 
 <!--
-Example:
-
-```sh
-
-```
+upload it to your github main branch 
  -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
+<!-- AUTHOR -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 > Mention all of the collaborators of this project.
 
