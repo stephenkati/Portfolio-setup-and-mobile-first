@@ -7,15 +7,24 @@ body {
   color: #172b4d;
   background-image: url("/images/header-illsutration-mobile@2x.png");
   background-position: center;
-  background-size: 365px 440px;
+  background-size: 353px 504px;
   background-repeat: no-repeat;
 }
 
-.welcome {
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #28352f;
+  justify-content: space-between;
+}
+
+.welcome {
+  color: #172b4d;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -26,6 +35,11 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+  color: #172b4d
 }
 
 .intro h1 {
@@ -50,14 +64,18 @@ body {
   text-align: center;
 }
 
-.contacts {
+ul {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 35px 10px;
 }
 
 ul li {
   list-style-type: none;
+  display: flex;
+  justify-content: baseline;
 }
 
 ul li a {
@@ -65,7 +83,7 @@ ul li a {
 }
 
 .contacts ul li a {
-  padding: 6px;
+  padding: 8px;
   font-size: 25px;
 }
 
