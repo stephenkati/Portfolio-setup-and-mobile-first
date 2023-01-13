@@ -6,7 +6,7 @@ body {
   padding: 5%;
   color: #172b4d;
   background-image: url("/images/header-illsutration-mobile@2x.png");
-  background-position: center; 
+  background-position: center;
   background-size: 365px 440px;
   background-repeat: no-repeat;
 }
@@ -15,7 +15,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #28352F;
+  color: #28352f;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -74,12 +74,6 @@ ul li a {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    /* background-image: url("/images/header-illsutration-mobile@2x.png"); */
-    /* background-size: 370px; */
-    /* background-position: 60% 70%; */
-  }
-
   header nav {
     display: flex;
     justify-content: space-between;
