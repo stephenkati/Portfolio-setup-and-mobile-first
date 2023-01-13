@@ -1,45 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body {
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 5%;
   color: #172b4d;
   background-image: url("/images/header-illsutration-mobile@2x.png");
+  background-position: center; 
+  background-size: 365px 440px;
+  background-repeat: no-repeat;
 }
 
-.header {
-  /* font-family: 'Inter'; */
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+.welcome {
+  display: flex;
+  align-items: center;
   text-align: center;
-}
-
-.header span {
-  color: green;
-}
-
-.intro {
-  /* font-family: 'Inter'; */
+  color: #28352F;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  width: 90px;
+  height: 28px;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+}
+
+.intro h1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
   text-align: center;
-  color: #172b4d;
+}
+
+.intro h1 span {
+  color: #00bd55c0;
+}
+
+.intro p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
 }
 
 .contacts {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
 }
 
-i {
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
   color: black;
 }
 
-.contacts i {
-  padding-left: 1em;
+.contacts ul li a {
+  padding: 6px;
   font-size: 25px;
 }
 
@@ -49,12 +75,12 @@ i {
 
 @media only screen and (max-width: 600px) {
   body {
-    background-image: url("/images/header-illsutration-mobile@2x.png");
-    background-size: 370px;
-    background-position: 60% 70%;
+    /* background-image: url("/images/header-illsutration-mobile@2x.png"); */
+    /* background-size: 370px; */
+    /* background-position: 60% 70%; */
   }
 
-  header {
+  header nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
