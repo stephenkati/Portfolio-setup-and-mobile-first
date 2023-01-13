@@ -11,6 +11,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Added this container for flexbox as requested by reviewers */
 .container {
   display: flex;
   flex-direction: column;
@@ -83,7 +84,7 @@ ul li a {
 }
 
 .contacts ul li a {
-  padding: 8px;
+  padding: 6px;
   font-size: 25px;
 }
 
