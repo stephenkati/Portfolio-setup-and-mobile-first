@@ -6,7 +6,6 @@ body {
   padding: 5%;
   color: #172b4d;
   background-image: url("/images/header-illsutration-mobile@2x.png");
-  /* background-size: cover; */
   background-position-x: -13px;
   background-position-y: 70px;
   background-size: 395px 440px;
@@ -17,11 +16,6 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
-}
-
-.welcome {
-  color: #172b4d;
   justify-content: space-between;
 }
 
@@ -41,7 +35,7 @@ header {
 
 a {
   text-decoration: none;
-  color: #172b4d
+  color: #172b4d;
 }
 
 .intro h1 {
@@ -67,19 +61,16 @@ a {
   padding: 0 15px;
 }
 
-.icons{
+.icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 35px 10px;
-  padding: 35px 10px;
 }
 
 ul li {
   list-style-type: none;
-  display: flex;
-  justify-content: baseline;
   display: flex;
   justify-content: baseline;
 }
@@ -98,7 +89,7 @@ ul li a {
 }
 
 /* nav icon display for small screens */
-@media only screen and (max-width:600px ) {
+@media only screen and (max-width: 600px) {
   header nav {
     display: flex;
     justify-content: space-between;
@@ -141,8 +132,8 @@ ul li a {
   margin: 15px 45%;
 }
 
-/* cards layout (grid css layout)*/
-@media only screen and (max-width: 600px){
+/* cards layout (grid css layout) */
+@media only screen and (max-width: 600px) {
   .card-layout {
     display: grid;
     gap: 1.2em;
@@ -151,7 +142,7 @@ ul li a {
   }
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) {
   .card-layout {
     display: grid;
     gap: 1.2em;
@@ -164,7 +155,7 @@ ul li a {
   }
 }
 
-/* cards (used flexbox to align item)*/
+/* cards (used flexbox to align item) */
 .card {
   background-color: #ebf0ee;
   height: 450px;
@@ -178,8 +169,8 @@ ul li a {
 
 /* card body */
 .card-body {
-  background-color: #ffffff;
-  bottom: 0px;
+  background-color: #fff;
+  bottom: 0;
   height: 222px;
   width: 310px;
   display: flex;
@@ -187,31 +178,28 @@ ul li a {
   align-items: center;
   text-align: center;
   border-radius: 8px;
-  padding: 0px;
+  padding: 0;
   margin: 0;
   gap: 6px;
 }
 
 .card-title {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   padding: 0;
   margin: 0;
-  /* display: flex;
-  justify-content: center; */
 }
 
 /* card button */
 .see-more {
   background-color: #36b37f;
-  color: #ffffff;
+  color: #fff;
   border-radius: 4px;
   padding: 15px 10px;
   bottom: 8px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -264,7 +252,7 @@ ul li a {
   font-weight: 700;
   line-height: 30px;
   padding-top: 1em;
- margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .aboutme p {
@@ -276,11 +264,11 @@ ul li a {
 
 .aboutme .get-my-resume {
   background-color: #36b37f;
-  color: #ffffff;
+  color: #fff;
   border-radius: 4px;
   padding: 15px 10px;
   bottom: 8px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -288,7 +276,7 @@ ul li a {
   margin: 7px 1px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .aboutme ul {
     display: grid;
     gap: 1.2em;
@@ -297,7 +285,7 @@ ul li a {
   }
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) {
   .aboutme ul {
     display: grid;
     gap: 1.2em;
@@ -307,7 +295,7 @@ ul li a {
 }
 
 .aboutme-category {
-  background-color: #ebf0ee;;
+  background-color: #ebf0ee;
   height: 330px;
   width: 310px;
   display: flex;
@@ -316,7 +304,7 @@ ul li a {
   text-align: center;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
-  padding: 0px;
+  padding: 0;
   margin: 0;
   gap: 10px;
 }
@@ -324,11 +312,11 @@ ul li a {
 .aboutme-category img {
   width: 48px;
   height: 48px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 50% 50%;
   padding: 20px;
   margin-top: 20px;
-  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
 .aboutme-category h3 {
@@ -349,7 +337,7 @@ ul li a {
 }
 
 .aboutme-category ul li {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 8px;
   color: #36b37e;
   font-size: 12px;
