@@ -22,6 +22,11 @@ header {
 
 .welcome {
   color: #172b4d;
+  justify-content: space-between;
+}
+
+.welcome {
+  color: #172b4d;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -68,10 +73,13 @@ a {
   justify-content: center;
   align-items: center;
   padding: 35px 10px;
+  padding: 35px 10px;
 }
 
 ul li {
   list-style-type: none;
+  display: flex;
+  justify-content: baseline;
   display: flex;
   justify-content: baseline;
 }
