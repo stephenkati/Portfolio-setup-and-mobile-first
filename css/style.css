@@ -6,15 +6,10 @@ body {
   padding: 5%;
   color: #172b4d;
   background-image: url("/images/header-illsutration-mobile@2x.png");
-  background-position: center;
-  background-size: 353px 504px;
+  background-position-x: -13px;
+  background-position-y: 70px;
+  background-size: 395px 440px;
   background-repeat: no-repeat;
-}
-
-/* Added this container for flexbox as requested by reviewers */
-.container {
-  display: flex;
-  flex-direction: column;
 }
 
 header {
@@ -53,7 +48,7 @@ a {
 }
 
 .intro h1 span {
-  color: #00bd55c0;
+  color: #36b37e;
 }
 
 .intro p {
@@ -63,9 +58,10 @@ a {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+  padding: 0 15px;
 }
 
-ul {
+.icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -84,7 +80,7 @@ ul li a {
 }
 
 .contacts ul li a {
-  padding: 6px;
+  padding: 8px;
   font-size: 25px;
 }
 
@@ -92,6 +88,7 @@ ul li a {
   display: none;
 }
 
+/* nav icon display for small screens */
 @media only screen and (max-width: 600px) {
   header nav {
     display: flex;
@@ -100,6 +97,252 @@ ul li a {
   }
 
   .small {
-    display: block;
+    display: inline-block;
+    padding-right: 30px;
   }
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-angle-down {
+  font-size: 25px;
+  padding: 5px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.63);
+  border-radius: 50% 50%;
+}
+
+.work-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+}
+
+.work-title::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: #36b37e;
+  margin: 15px 45%;
+}
+
+/* cards layout (grid css layout) */
+@media only screen and (max-width: 600px) {
+  .card-layout {
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card-layout {
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+
+  body {
+    background-image: none;
+  }
+}
+
+/* cards (used flexbox to align item) */
+.card {
+  background-color: #ebf0ee;
+  height: 450px;
+  width: 310px;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* card body */
+.card-body {
+  background-color: #fff;
+  bottom: 0;
+  height: 222px;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+  gap: 6px;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* card button */
+.see-more {
+  background-color: #36b37f;
+  color: #fff;
+  border-radius: 4px;
+  padding: 15px 10px;
+  bottom: 8px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 1px 1px;
+}
+
+/* button action hover */
+.see-more:hover {
+  background-color: #65e4af;
+}
+
+/* card list items ul li */
+.card-body ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card-body ul li {
+  background: #ebf0ee;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 7px 6px;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* aboutme  */
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutme h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-top: 1em;
+  margin-bottom: 0;
+}
+
+/* centering categories as requested by reviewer */
+.aboutme ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutme p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.aboutme .get-my-resume {
+  background-color: #36b37f;
+  color: #fff;
+  border-radius: 4px;
+  padding: 15px 10px;
+  bottom: 8px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 7px 1px;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutme ul {
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .aboutme ul {
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+}
+
+.aboutme-category {
+  background-color: #ebf0ee;
+  height: 330px;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.aboutme-category img {
+  width: 122px;
+  height: 122px;
+  margin-top: 20px;
+}
+
+.aboutme-category h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  padding-top: 0;
+  padding-bottom: 18px;
+}
+
+.aboutme-category ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 310px;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.aboutme-category ul li {
+  background-color: #fff;
+  border-radius: 8px;
+  color: #36b37e;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  padding: 12px;
+  margin: 0;
 }
