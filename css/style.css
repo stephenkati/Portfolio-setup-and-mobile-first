@@ -189,7 +189,8 @@ ul li a {
   font-size: 24px;
   line-height: 32px;
   padding: 0;
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 /* card button */
@@ -204,19 +205,13 @@ ul li a {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  margin: 5px 1px;
+  margin: 1px 1px;
 }
 
 /* button action hover */
 .see-more:hover {
   background-color: #65e4af;
 }
-
-/* @media(hover: hover) and (pointer: fine) {
-  .see-more:hover {
-    background-color: #65e4af;
-  }
-} */
 
 /* card list items ul li */
 .card-body ul {
@@ -253,6 +248,14 @@ ul li a {
   line-height: 30px;
   padding-top: 1em;
   margin-bottom: 0;
+}
+
+/* centering categories as requested by reviewer */
+.aboutme ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .aboutme p {
@@ -306,17 +309,13 @@ ul li a {
   border-radius: 8px;
   padding: 0;
   margin: 0;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .aboutme-category img {
-  width: 48px;
-  height: 48px;
-  background-color: #fff;
-  border-radius: 50% 50%;
-  padding: 20px;
+  width: 122px;
+  height: 122px;
   margin-top: 20px;
-  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
 .aboutme-category h3 {
@@ -325,6 +324,8 @@ ul li a {
   line-height: 32px;
   text-align: center;
   color: #344563;
+  padding-top: 0;
+  padding-bottom: 18px;
 }
 
 .aboutme-category ul {
