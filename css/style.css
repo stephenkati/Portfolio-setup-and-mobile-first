@@ -362,6 +362,7 @@ ul li a {
 }
 
 .aboutme-category1 img {
+  float: left;
   width: 122px;
   height: 122px;
   margin-top: 20px;
@@ -379,5 +380,8 @@ ul li a {
 
 
 .tech {
-  float: right;
+  display: flex;
+  flex-direction: row;
+
+
 }
