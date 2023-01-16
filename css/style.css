@@ -39,6 +39,7 @@ a {
 }
 
 .intro h1 {
+  float: left;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
