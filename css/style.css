@@ -45,6 +45,7 @@ a {
   font-size: 36px;
   line-height: 48px;
   text-align: center;
+  float: left;
 }
 
 .intro h1 span {
@@ -378,10 +379,7 @@ ul li a {
   padding-bottom: 18px;
 }
 
-
 .tech {
   display: flex;
   flex-direction: row;
-
-
 }
