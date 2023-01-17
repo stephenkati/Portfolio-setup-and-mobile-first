@@ -213,6 +213,10 @@ ul li a {
   background-color: #65e4af;
 }
 
+.see-more:active {
+  background: #008552;
+}
+
 /* card list items ul li */
 .card-body ul {
   padding: 0;
@@ -348,12 +352,87 @@ ul li a {
 }
 
 .aboutme-text {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   padding: 20px;
+}
+
+form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+
+input {
+  width: 330px;
+  height: 36px;
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #344563;
+}
+
+textarea {
+  width: 330px;
+  height: 110px;
+  border: 1px solid #60C095;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #344563;
+}
+
+input::placeholder {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+button {
+  background: #36B37F;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1em 2em;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+button:hover {
+  background-color: #65e4af;
+}
+
+button:active {
+  background: #008552;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  padding-top: 0;
+  font-size: 24px;
+  padding-bottom: 15em;
+}
+
+.icons2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
 }
