@@ -373,7 +373,7 @@ form {
 input {
   width: 330px;
   height: 36px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
   padding: 10px;
   font-size: 20px;
@@ -384,7 +384,7 @@ input {
 textarea {
   width: 330px;
   height: 110px;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
   border-radius: 4px;
   padding: 10px;
   font-size: 20px;
@@ -399,7 +399,7 @@ input::placeholder {
 }
 
 button {
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 4px;
   color: #fff;
   padding: 1em 2em;
