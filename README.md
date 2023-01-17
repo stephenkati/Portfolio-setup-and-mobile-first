@@ -198,7 +198,7 @@ upload it to your github main branch
 
 <!-- AUTHOR -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 > Mention all of the collaborators of this project.
 
@@ -208,6 +208,8 @@ upload it to your github main branch
 - Twitter: [@twitterhandle](https://twitter.com/Stephen57913145)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/stephen-katuli-a92752251/)
 
+👤 **Queenter Juma**
+- GitHub: [@githubhandle](https://github.com/QueenterJuma)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
