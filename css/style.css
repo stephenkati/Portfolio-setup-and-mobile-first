@@ -39,7 +39,6 @@ a {
 }
 
 .intro h1 {
-  float: left;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -348,41 +347,13 @@ ul li a {
   margin: 0;
 }
 
-.aboutme-category1 {
-  background-color: #ebf0ee;
-  height: 330px;
-  width: 310px;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  /* text-align: center; */
-  border: 1px solid #c1c7d0;
-  border-radius: 8px;
-  padding: 0;
-  margin: 0;
-}
-
-.aboutme-category1 img {
-  float: left;
-  width: 122px;
-  height: 122px;
-  margin-top: 20px;
-}
-
-.aboutme-category1 h3 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+.aboutme-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
   text-align: center;
-  color: #344563;
-  padding-top: 0;
-  padding-bottom: 18px;
-}
-
-
-.tech {
-  display: flex;
-  flex-direction: row;
-
-
+  color: #172B4D;
+  padding: 20px;
 }
