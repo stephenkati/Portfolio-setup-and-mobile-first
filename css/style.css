@@ -15,12 +15,8 @@ header {
   margin-bottom: 0;
 }
 
-.contain {
-  background-image: url("/images/backgroundimg.svg");
-  background-repeat: no-repeat;
-}
-
 .welcome {
+  display: none;
   color: #172b4d;
   flex: none;
   order: 0;
@@ -32,6 +28,17 @@ header {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+}
+
+/* desktop view of the nav */
+.desktop-nav {
+  display: block;
+}
+
+.desktop-nav ul li a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -89,7 +96,7 @@ ul li a {
   display: none;
 }
 
-/* nav icon display for small screens */
+/* nav and icon display for small screens */
 @media only screen and (max-width: 600px) {
   header nav {
     display: flex;
@@ -97,9 +104,22 @@ ul li a {
     align-items: baseline;
   }
 
+  .welcome {
+    display: block;
+  }
+
   .small {
     display: inline-block;
     padding-right: 30px;
+  }
+
+  .contain {
+    background-image: url("/images/backgroundimg.svg");
+    background-repeat: no-repeat;
+  }
+
+  .desktop-nav {
+    display: none;
   }
 }
 
@@ -378,7 +398,7 @@ form {
   text-align: center;
   align-items: center;
   gap: 20px;
-  background-image: url(/images/illustration-contact-form.svg);
+  background-image: url(/images/illustration-contact-form.png);
   background-position: bottom right;
   background-repeat: no-repeat;
 }
