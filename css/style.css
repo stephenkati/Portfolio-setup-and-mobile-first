@@ -50,7 +50,16 @@ header {
   display: block;
 }
 
-.desktop-nav ul{
+a {
+  text-decoration: none;
+  color: #172b4d;
+}
+
+ul li a {
+  color: #172b4d;
+}
+
+.desktop-nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -58,8 +67,6 @@ header {
 }
 
 .desktop-nav ul li a {
-  font-family: 'Inter', 'sans-serif';
-  font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
@@ -76,11 +83,6 @@ header {
   .contain {
     padding: 10em 0 15em;
   }
-}
-
-a {
-  text-decoration: none;
-  color: #172b4d;
 }
 
 .intro h1 {
@@ -127,18 +129,14 @@ a {
   }
 }
 
-
 ul li {
   list-style-type: none;
   display: flex;
   justify-content: baseline;
 }
 
-ul li a {
-  color: black;
-}
 .contacts {
-padding: 0  ;
+  padding: 0;
 }
 
 .contacts ul li a {
@@ -538,6 +536,7 @@ textarea {
     width: 550px;
     height: 36px;
   }
+
   textarea {
     width: 550px;
     height: 110px;
