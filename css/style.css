@@ -5,11 +5,6 @@ body {
   margin: 0;
   padding: 5%;
   color: #172b4d;
-  background-image: url("/images/header-illsutration-mobile@2x.png");
-  background-position-x: -13px;
-  background-position-y: 70px;
-  background-size: 395px 440px;
-  background-repeat: no-repeat;
 }
 
 header {
@@ -17,6 +12,12 @@ header {
   align-items: center;
   text-align: center;
   justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.contain {
+  background-image: url("/images/backgroundimg.svg");
+  background-repeat: no-repeat;
 }
 
 .welcome {
@@ -213,6 +214,10 @@ ul li a {
   background-color: #65e4af;
 }
 
+.see-more:active {
+  background: #008552;
+}
+
 /* card list items ul li */
 .card-body ul {
   padding: 0;
@@ -236,6 +241,15 @@ ul li a {
 
 /* aboutme  */
 .aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/images/aboutme-top-right.png), url(/images/aboutme-left-bottom.png);
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+}
+
+.about-technologies {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,7 +294,7 @@ ul li a {
 }
 
 @media only screen and (max-width: 600px) {
-  .aboutme ul {
+  .about-technologies ul {
     display: grid;
     gap: 1.2em;
     grid-template-columns: 1fr;
@@ -289,7 +303,7 @@ ul li a {
 }
 
 @media only screen and (min-width: 600px) {
-  .aboutme ul {
+  .about-technologies ul {
     display: grid;
     gap: 1.2em;
     grid-template-columns: 1fr 1fr 1fr;
@@ -345,4 +359,93 @@ ul li a {
   line-height: 12px;
   padding: 12px;
   margin: 0;
+}
+
+.aboutme-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  padding: 20px;
+}
+
+form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  background-image: url(/images/illustration-contact-form.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+input {
+  width: 330px;
+  height: 36px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #344563;
+}
+
+textarea {
+  width: 330px;
+  height: 110px;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #344563;
+}
+
+input::placeholder {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+button {
+  background: #36b37f;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1em 2em;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+button:hover {
+  background-color: #65e4af;
+}
+
+button:active {
+  background: #008552;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  padding-top: 0;
+  font-size: 24px;
+  padding-bottom: 15em;
+}
+
+.icons2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
 }
