@@ -237,7 +237,7 @@ ul li {
   background-size: 15%;
 }
 
-.aboutme-cards ul{
+.aboutme-cards ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
@@ -602,13 +602,13 @@ footer {
     justify-content: center;
   }
 
-   /* intro paragraph size */
-   .intro p {
+  /* intro paragraph size */
+  .intro p {
     padding: 0 9em;
   }
 
-   /* aboutme paragraph size */
-   .aboutme p {
+  /* aboutme paragraph size */
+  .aboutme p {
     padding: 0 7em;
   }
 
@@ -624,7 +624,7 @@ footer {
 }
 
 /* background image for medium and large screen */
-@media only screen and (min-width: 695px){
+@media only screen and (min-width: 695px) {
   /* background for the top part of the page */
   .top-container {
     background-image: url(/images/Header-llustration-desktop@2x.png);
@@ -635,7 +635,7 @@ footer {
 }
 
 /* background image for small screen */
-@media only screen and (max-width: 694px){
+@media only screen and (max-width: 694px) {
   /* background for the top part of the page */
   .contain {
     background-image: url("/images/backgroundimg.svg");
