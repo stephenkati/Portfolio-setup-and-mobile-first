@@ -6,6 +6,7 @@ body {
   color: #172b4d;
 }
 
+/* menu icon for small screens */
 .toggle-menu {
   display: flex;
   align-items: center;
@@ -29,21 +30,12 @@ body {
   line-height: 28px;
 }
 
-/* background for the top part of the page */
-@media only screen and (min-width: 768px) {
-  .top-container {
-    background-image: url(/images/Header-llustration-desktop@2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
 /* desktop view of the nav */
 header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0 10%;
+  padding: 0 5%;
 }
 
 .desktop-nav {
@@ -56,7 +48,7 @@ a {
 }
 
 ul li a {
-  color: #172b4d;
+  color: #000000ea;
 }
 
 .desktop-nav ul {
@@ -77,12 +69,6 @@ ul li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .contain {
-    padding: 10em 0 15em;
-  }
 }
 
 .intro h1 {
@@ -108,25 +94,12 @@ ul li a {
   padding: 0 15px;
 }
 
-@media only screen and (min-width: 768px) {
-  .intro p {
-    padding: 0 16em;
-  }
-}
-
 .icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 35px 10px;
-}
-
-@media only screen and (min-width: 768px) {
-  .icons {
-    padding: 0 10px;
-    padding-bottom: 35px;
-  }
 }
 
 ul li {
@@ -148,35 +121,6 @@ ul li {
   display: none;
 }
 
-/* nav and icon display for small screens */
-@media only screen and (max-width: 768px) {
-  .toggle-menu nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-
-  .welcome {
-    display: block;
-  }
-
-  .small {
-    display: inline-block;
-    padding-right: 30px;
-  }
-
-  .contain {
-    background-image: url("/images/backgroundimg.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 10px;
-  }
-
-  header .desktop-nav {
-    display: none;
-  }
-}
-
 .work {
   display: flex;
   flex-direction: column;
@@ -196,44 +140,6 @@ ul li {
   font-weight: 700;
   line-height: 52px;
   text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .work-title::after {
-    content: "";
-    display: block;
-    width: 48px;
-    height: 4px;
-    background: #36b37e;
-    margin: 15px 45%;
-  }
-}
-
-/* cards layout (grid css layout) */
-@media only screen and (max-width: 768px) {
-  header {
-    display: block;
-  }
-
-  .card-layout {
-    display: grid;
-    gap: 1.2em;
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .card-layout {
-    display: grid;
-    gap: 1.2em;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-  }
-
-  body {
-    background-image: none;
-  }
 }
 
 /* cards (used flexbox to align item) */
@@ -294,6 +200,7 @@ ul li {
   background-color: #65e4af;
 }
 
+/* button on click */
 .see-more:active {
   background: #008552;
 }
@@ -330,20 +237,6 @@ ul li {
   background-size: 15%;
 }
 
-@media only screen and (min-width: 768px) {
-  .aboutme {
-    padding: 3em 0 1em;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .aboutme {
-    background-image: url(/images/aboutme-top-right.png), url(/images/aboutme-left-bottom.png);
-    background-position: top right, bottom left;
-    background-repeat: no-repeat;
-  }
-}
-
 .about-technologies {
   display: flex;
   flex-direction: column;
@@ -374,12 +267,6 @@ ul li {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
-  .aboutme p {
-    padding: 0 12em;
-  }
-}
-
 .aboutme .get-my-resume {
   background-color: #36b37f;
   color: #fff;
@@ -394,22 +281,12 @@ ul li {
   margin: 7px 1px;
 }
 
-@media only screen and (max-width: 768px) {
-  .about-technologies ul {
-    display: grid;
-    gap: 1.2em;
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
+.get-my-resume:hover {
+  background-color: #65e4af;
 }
 
-@media only screen and (min-width: 768px) {
-  .about-technologies ul {
-    display: grid;
-    gap: 1.2em;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-  }
+.get-my-resume:active {
+  background: #008552;
 }
 
 .aboutme-category {
@@ -462,17 +339,6 @@ ul li {
   margin: 0;
 }
 
-@media only screen and (min-width: 768px) {
-  .form-container {
-    display: flex;
-    padding: 5em 8em 15em;
-    background-image: url(/images/Form-left-bottom.png), url(/images/illustration-2-contact-form-desktop@2x.png), url(/images/Form-bottom-right.png);
-    background-position: 0% 95%, 25% 80%, 100% 90%;
-    background-repeat: no-repeat;
-    background-size: 15%;
-  }
-}
-
 form {
   background-color: #fff;
   display: flex;
@@ -480,9 +346,6 @@ form {
   text-align: center;
   align-items: center;
   gap: 20px;
-  background-image: url(/images/illustration-contact-form.svg);
-  background-position: bottom right;
-  background-repeat: no-repeat;
 }
 
 .form-text {
@@ -493,20 +356,6 @@ form {
   text-align: center;
   color: #172b4d;
   padding: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .form-text {
-    font-size: 25px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
 
 input {
@@ -529,18 +378,6 @@ textarea {
   font-size: 20px;
   font-weight: 500;
   color: #344563;
-}
-
-@media only screen and (min-width: 768px) {
-  input {
-    width: 550px;
-    height: 36px;
-  }
-
-  textarea {
-    width: 550px;
-    height: 110px;
-  }
 }
 
 input::placeholder {
@@ -580,16 +417,182 @@ footer {
   padding-bottom: 15em;
 }
 
-@media only screen and (min-width: 768px) {
-  .email {
-    display: none;
-  }
-}
-
 .icons2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-left: 0;
+}
+
+/* media querry for small screens */
+@media only screen and (max-width: 768px) {
+/* nav and icon display */
+  .toggle-menu nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .welcome {
+    display: block;
+  }
+
+  .small {
+    display: inline-block;
+    padding-right: 30px;
+  }
+
+  .contain {
+    background-image: url("/images/backgroundimg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 10px;
+  }
+
+  header .desktop-nav {
+    display: none;
+  }
+
+  /* green line below my work */
+  .work-title::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    background: #36b37e;
+    margin: 15px 45%;
+  }
+
+  header {
+    display: block;
+  }
+
+  /* cards layout (grid css layout) */
+  .card-layout {
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  /* aboutme background image */
+  .aboutme {
+    background-image: url(/images/aboutme-top-right.png), url(/images/aboutme-left-bottom.png);
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+  }
+
+  /* layout for form */
+  form {
+    background-image: url(/images/illustration-contact-form.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  /* language, framework and skill */
+  .about-technologies ul {
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+
+/* media queries for desktop view */
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: none;
+  }
+
+  /* background for the top part of the page */
+  .top-container {
+    background-image: url(/images/Header-llustration-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* contain section */
+  .contain {
+    padding: 10em 0 15em;
+  }
+
+  /* intro paragraph size */
+  .intro p {
+    padding: 0 16em;
+  }
+
+  /* padding for icons */
+  .icons {
+    padding: 0 10px;
+    padding-bottom: 35px;
+  }
+
+  /* cards layout */
+  .card-layout {
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+
+  /* aboutme padding */
+  .aboutme {
+    padding: 3em 0 1em;
+  }
+
+  /* aboutme paragraph size */
+  .aboutme p {
+    padding: 0 12em;
+  }
+
+  /* language, framework and skill */
+  .about-technologies ul {
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+
+  /* layout for form-container and background images*/
+  .form-container {
+    display: flex;
+    padding: 5em 8em 15em;
+    background-image: url(/images/Form-left-bottom.png), url(/images/illustration-2-contact-form-desktop@2x.png), url(/images/Form-bottom-right.png);
+    background-position: 0% 95%, 25% 80%, 100% 98%;
+    background-repeat: no-repeat;
+    background-size: 15%;
+  }
+
+  /* form layout */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* form text */
+  .form-text {
+    font-size: 25px;
+  }
+
+  input {
+    width: 550px;
+    height: 36px;
+  }
+
+  textarea {
+    width: 550px;
+    height: 110px;
+  }
+
+  /* footer shadow */
+  footer {
+    box-shadow: 0 -2px 1px  #DFE1E6;
+  }
+
+  /* email */
+  .email {
+    display: none;
+  }
 }
