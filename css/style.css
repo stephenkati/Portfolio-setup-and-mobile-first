@@ -358,18 +358,6 @@ form {
   padding: 20px;
 }
 
-form {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  gap: 20px;
-  /* background-image: url(/images/illustration-contact-form.png); */
-  background-position: bottom right;
-  background-repeat: no-repeat;
-}
-
 input {
   width: 330px;
   height: 36px;
@@ -439,7 +427,7 @@ footer {
 
 /* media querry for small screens */
 @media only screen and (max-width: 768px) {
-/* nav and icon display */
+  /* nav and icon display */
   .toggle-menu nav {
     display: flex;
     justify-content: space-between;
@@ -566,7 +554,7 @@ footer {
     justify-content: center;
   }
 
-  /* layout for form-container and background images*/
+  /* layout for form-container and background images */
   .form-container {
     display: flex;
     padding: 5em 8em 15em;
@@ -600,7 +588,7 @@ footer {
 
   /* footer shadow */
   footer {
-    box-shadow: 0 -2px 1px  #DFE1E6;
+    box-shadow: 0 -2px 1px  #dfe1e6;
   }
 
   /* email */
