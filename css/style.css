@@ -237,10 +237,18 @@ ul li {
   background-size: 15%;
 }
 
+.aboutme-cards ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
 .about-technologies {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .aboutme h3 {
@@ -326,6 +334,7 @@ ul li {
   width: 310px;
   flex-wrap: wrap;
   gap: 7px;
+  justify-content: center;
 }
 
 .aboutme-category ul li {
@@ -443,13 +452,6 @@ footer {
     padding-right: 30px;
   }
 
-  .contain {
-    background-image: url("/images/backgroundimg.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 10px;
-  }
-
   header .desktop-nav {
     display: none;
   }
@@ -503,13 +505,6 @@ footer {
 @media only screen and (min-width: 768px) {
   body {
     background-image: none;
-  }
-
-  /* background for the top part of the page */
-  .top-container {
-    background-image: url(/images/Header-llustration-desktop@2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   /* contain section */
@@ -594,5 +589,58 @@ footer {
   /* email */
   .email {
     display: none;
+  }
+}
+
+/* media querry for medium */
+@media (min-width: 680px) and (max-width: 1009px) {
+  /* cards layout */
+  .card-layout {
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+   /* intro paragraph size */
+   .intro p {
+    padding: 0 9em;
+  }
+
+   /* aboutme paragraph size */
+   .aboutme p {
+    padding: 0 7em;
+  }
+
+  input {
+    width: 300px;
+    height: 36px;
+  }
+
+  textarea {
+    width: 300px;
+    height: 110px;
+  }
+}
+
+/* background image for medium and large screen */
+@media only screen and (min-width: 695px){
+  /* background for the top part of the page */
+  .top-container {
+    background-image: url(/images/Header-llustration-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* background image for small screen */
+@media only screen and (max-width: 694px){
+  /* background for the top part of the page */
+  .contain {
+    background-image: url("/images/backgroundimg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 10px;
   }
 }
