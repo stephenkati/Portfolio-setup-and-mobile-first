@@ -79,12 +79,12 @@ ul li a {
   line-height: 48px;
   text-align: center;
   overflow: hidden;
-  border-right: .15em solid orange;
+  border-right: 0.15em solid orange;
   margin: 0 auto;
   white-space: nowrap;
-  animation: 
+  animation:
     typing 7s steps(23),
-    blink-caret .75s step-end infinite;
+    blink-caret 0.75s step-end infinite;
 }
 
 .intro h1 span {
@@ -93,12 +93,13 @@ ul li a {
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
+  from,
+  to { border-color: transparent; }
   50% { border-color: orange; }
 }
 
@@ -173,9 +174,7 @@ ul li {
   transition: transform 400ms ease-in;
 }
 
-.card:hover
-.card:active
-.card:focus {
+.card:hover .card:active .card:focus {
   transform: scale(1.075);
 }
 
