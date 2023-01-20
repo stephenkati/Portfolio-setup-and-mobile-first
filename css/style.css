@@ -171,11 +171,11 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  transition: transform 400ms ease-in;
+  transition: transform 400ms ease-in-out;
 }
 
-.card:hover .card:active .card:focus {
-  transform: scale(1.075);
+.card:hover {
+   transform: scale(1.075);
 }
 
 /* card body */
