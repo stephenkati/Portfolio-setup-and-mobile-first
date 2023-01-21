@@ -78,10 +78,29 @@ ul li a {
   font-size: 36px;
   line-height: 48px;
   text-align: center;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  margin: 0 auto;
+  white-space: nowrap;
+  animation:
+    typing 7s steps(23),
+    blink-caret 0.75s step-end infinite;
 }
 
 .intro h1 span {
   color: #36b37e;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from,
+  to { border-color: transparent; }
+  50% { border-color: orange; }
 }
 
 .intro p {
@@ -152,6 +171,11 @@ ul li {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  transition: transform 400ms ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.075);
 }
 
 /* card body */
