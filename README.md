@@ -115,7 +115,7 @@ A list of relevant skills: List the programming languages, frameworks, and tools
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](No live demo yet deployed.)
+- [Live Demo Link](https://stephenkati.github.io/Portfolio-setup-and-mobile-first/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +180,7 @@ write the exact location of the file on your browser and choose index.html file
 
 ### Run tests
 
-To run tests, run the following command:
+ou can run tests to check for linter errors by running the following command: npx stylelint "**/*.{css,scss}"
 
 <!--
 Use linters to check for errors. Html and css linters are already added.
@@ -188,7 +188,7 @@ Use linters to check for errors. Html and css linters are already added.
 
 ### Deployment
 
-You can deploy this project using:
+The app is deployed on Github pages. Follow the link below: https://stephenkati.github.io/Portfolio-setup-and-mobile-first/
 
 <!--
 upload it to your github main branch 
