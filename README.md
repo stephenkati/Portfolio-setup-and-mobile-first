@@ -188,7 +188,7 @@ Use linters to check for errors. Html and css linters are already added.
 
 ### Deployment
 
-The app is deployed on Github pages. Follow the link below: https://stephenkati.github.io/Portfolio-setup-and-mobile-first/
+You can deploy this project using:
 
 <!--
 upload it to your github main branch 
