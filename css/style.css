@@ -255,7 +255,7 @@ ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/images/illustration-about\ me-1-desktop@2x.png), url(/images/illustration-about-me-2-desktop@2x.png);
+  background-image: url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/illustration-about\ me-1-desktop@2x.png), url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/illustration-about-me-2-desktop@2x.png);
   background-position: top right, bottom left;
   background-repeat: no-repeat;
   background-size: 15%;
@@ -504,14 +504,14 @@ footer {
 
   /* aboutme background image */
   .aboutme {
-    background-image: url(/images/aboutme-top-right.png), url(/images/aboutme-left-bottom.png);
+    background-image: url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/aboutme-top-right.png), url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/aboutme-left-bottom.png);
     background-position: top right, bottom left;
     background-repeat: no-repeat;
   }
 
   /* layout for form */
   form {
-    background-image: url(/images/illustration-contact-form.svg);
+    background-image: url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/illustration-contact-form.svg);
     background-position: bottom right;
     background-repeat: no-repeat;
   }
@@ -577,7 +577,7 @@ footer {
   .form-container {
     display: flex;
     padding: 5em 8em 15em;
-    background-image: url(/images/Form-left-bottom.png), url(/images/illustration-2-contact-form-desktop@2x.png), url(/images/Form-bottom-right.png);
+    background-image: url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/Form-left-bottom.png), url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/illustration-2-contact-form-desktop@2x.png), url(/images/Form-bottom-right.png);
     background-position: 0% 95%, 25% 80%, 100% 98%;
     background-repeat: no-repeat;
     background-size: 15%;
@@ -651,7 +651,7 @@ footer {
 @media only screen and (min-width: 695px) {
   /* background for the top part of the page */
   .top-container {
-    background-image: url(/images/headerilustrationdesktop.png);
+    background-image: url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/headerilustrationdesktop.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -662,7 +662,7 @@ footer {
 @media only screen and (max-width: 694px) {
   /* background for the top part of the page */
   .contain {
-    background-image: url("/images/backgroundimg.svg");
+    background-image: url("https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/backgroundimg.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 10px;
