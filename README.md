@@ -180,7 +180,7 @@ write the exact location of the file on your browser and choose index.html file
 
 ### Run tests
 
-To run tests, run the following command:
+The app is deployed on Github pages. Follow the link below: https://stephenkati.github.io/Portfolio-setup-and-mobile-first/
 
 <!--
 Use linters to check for errors. Html and css linters are already added.
