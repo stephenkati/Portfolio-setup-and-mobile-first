@@ -577,7 +577,7 @@ footer {
   .form-container {
     display: flex;
     padding: 5em 8em 15em;
-    background-image: url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/Form-left-bottom.png), url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/illustration-2-contact-form-desktop@2x.png), url(/images/Form-bottom-right.png);
+    background-image: url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/Form-left-bottom.png), url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/illustration-2-contact-form-desktop@2x.png), url(https://stephenkati.github.io/Portfolio-setup-and-mobile-first/images/Form-bottom-right.png);
     background-position: 0% 95%, 25% 80%, 100% 98%;
     background-repeat: no-repeat;
     background-size: 15%;
