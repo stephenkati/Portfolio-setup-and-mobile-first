@@ -14,14 +14,20 @@
         <header>
             <div class="toggle-menu">
                 <h3 class="welcome"><a href="">Welcome</a></h3>
-                <nav class="small mobile-menu" >
+                <input type="checkbox" id="mm-toggle" class="mm-toggle">
+               
+                <!--mobile-menu display only on mobile-->
+                <nav class="small mobile-menu">
                     <i class="fa-solid fa-bars"></i>
-                    <!--mobile-menu display only on mobile-->
+                    
                     <ul>
                         <li><a href="#" >Portfolio</a></li>
                         <li><a href="#About" >About</a></li>
                         <li><a href="#Contact" >Contact</a></li>
                     </ul>
+                    <label for="mm-toggle" class="mm-toggle-label">
+                        <span>X</span>
+                    </label>
                 </nav>
 
                 <nav class="desktop-nav">
