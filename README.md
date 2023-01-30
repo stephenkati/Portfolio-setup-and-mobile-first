@@ -252,6 +252,10 @@ I would like to thankmy Microverse team and my coding partners for their support
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+**Project presentation video**
+Follow the link below to see a brief presentation of the project.
+https://www.loom.com/share/04dcc64e063248eda0b07a0e4aef6f09
+
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
