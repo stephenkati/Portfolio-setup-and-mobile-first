@@ -6,7 +6,6 @@ body {
   color: #172b4d;
 }
 
-/* menu icon for small screens */
 .toggle-menu {
   display: flex;
   align-items: center;
@@ -134,10 +133,6 @@ ul li {
 .contacts ul li a {
   padding: 8px;
   font-size: 25px;
-}
-
-.small {
-  display: none;
 }
 
 .work {
@@ -461,63 +456,49 @@ footer {
 /* media querry for small screens */
 @media only screen and (max-width: 768px) {
   /* nav and icon display */
-  .toggle-menu nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-
-  .mobile-menu {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgb(255, 255, 255, 1);
-    z-index: 999;
-  }
-
-  .mobile-menu ul {
-    position: absolute;
-    margin: 84px 0 0 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  .mobile-menu ul li {
-    list-style-type: none;
-    margin-left: 28px;
-    margin-bottom: 40px;
-  }
-
-  .mobile-menu ul li a {
-    text-decoration: none;
-    color: #3A4A42;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
-  }
-
-  .mm-toggle-label {
-    position: absolute;
-    top: 62px;
-    right: 60px;
-    width: 24px;
-    height: 24px;
-    color: #3A4A42;
-    border: 2px solid #67798E;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
-  }
-
   .welcome {
     display: block;
   }
 
-  .small {
-    display: inline-block;
-    padding-right: 30px;
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    transition: right 1s ease-in;
+  }
+
+  .show {
+    right: 0;
+  }
+
+  .mobile-menu i {
+    position: absolute;
+    top: 1.5em;
+    right: 2em;
+    color: #939f94;
+    font-size: 28px;
+  }
+
+  .mobile-menu ul {
+    padding: 2em;
+    padding-top: 4em;
+  }
+
+  .mobile-menu li {
+    padding: 1em;
+    list-style-type: none;
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #3a4a42;
   }
 
   header .desktop-nav {
@@ -573,6 +554,14 @@ footer {
 @media only screen and (min-width: 768px) {
   body {
     background-image: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .small {
+    display: none;
   }
 
   /* contain section */
