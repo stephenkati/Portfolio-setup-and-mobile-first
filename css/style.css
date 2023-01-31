@@ -29,6 +29,10 @@ body {
   line-height: 28px;
 }
 
+.small {
+  display: none;
+}
+
 /* desktop view of the nav */
 header {
   display: flex;
@@ -516,6 +520,10 @@ footer {
   }
 
   header {
+    display: block;
+  }
+
+  .small {
     display: block;
   }
 
