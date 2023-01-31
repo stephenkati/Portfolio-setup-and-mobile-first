@@ -14,8 +14,16 @@
         <header>
             <div class="toggle-menu">
                 <h3 class="welcome"><a href="">Welcome</a></h3>
-                <nav class="small">
-                    <i class="fa-solid fa-bars"></i>
+               
+                <!--mobile-menu display only on mobile-->
+                <i class="fa-solid fa-bars small" id="hambuger"></i>
+                <nav  class="mobile-menu" id="mobileMenu">
+                    <i class="fa-solid fa-x" id="x"></i>
+                    <ul>
+                        <li><a href="#" class="nav-item">Portfolio</a></li>
+                        <li><a href="#About" class="nav-item">About</a></li>
+                        <li><a href="#Contact" class="nav-item">Contact</a></li>
+                    </ul>
                 </nav>
                 <nav class="desktop-nav">
                     <ul>
@@ -25,6 +33,7 @@
                     </ul>
                 </nav>
             </div>
+           
         </header>
         <div class="contain">
     
@@ -225,5 +234,6 @@
     <a href="" class="email">stephenkatuli88@gmail.com</a>
 </footer>
 </div>
+<script src="main.js"></script>
 </body>
 </html>

@@ -211,6 +211,11 @@ upload it to your github main branch
 👤 **Queenter Juma**
 - GitHub: [@githubhandle](https://github.com/QueenterJuma)
 
+👤 **Ometman**
+- GitHub: [@githubhandle](https://github.com/ometman)
+- Twitter: [@twitterhandle](https://twitter.com/ometman)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ometman)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
