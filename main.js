@@ -171,3 +171,33 @@ hidewindow.addEventListener('click', (e) => {
   e.preventDefault();
   blurred.classList.remove('showwindow');
 });
+
+// form validation
+const email = document.querySelector('#email');
+
+form.addEventListener('submit', (e) => {
+  
+  e.preventDefault();
+    let mail = email.value;
+  
+    if (mail == mail.toLowerCase())
+    {
+      // The email is lowercase
+      
+    }
+    else
+    {
+      // The email is uppercase
+      // setErrorFor(email, 'Email should be in lowercase');
+    }
+  
+});
+
+function setErrorFor(input, message){
+  const small = form1.querySelector('small');
+  small.classList('.fa-exclamation-circle')
+  small.innerText = message;
+}
+
+
+

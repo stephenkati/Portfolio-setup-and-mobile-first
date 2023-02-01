@@ -390,6 +390,7 @@ form {
   text-align: center;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
 .form-text {
@@ -413,6 +414,10 @@ input {
   color: #344563;
 }
 
+#email {
+  margin-bottom: 10px;
+}
+
 textarea {
   width: 330px;
   height: 110px;
@@ -428,6 +433,27 @@ input::placeholder {
   padding: 10px;
   font-size: 20px;
   font-weight: 500;
+}
+
+/* .success {
+  border: #2ecc71;
+}
+
+.error {
+  border: #e74c3c;
+} */
+
+.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+form i {
+  visibility: hidden;
+}
+
+form small {
+  visibility: hidden;
 }
 
 button {
