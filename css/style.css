@@ -57,12 +57,12 @@ ul li a {
   justify-content: center;
   padding: 8px;
   gap: 10px;
-  width: 141px;
-  height: 48px;
+  width: 118px;
+  height: 40px;
   background: #36b37e;
   border-radius: 8px;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 14px;
   color: #fff;
 }
 
@@ -484,8 +484,8 @@ footer {
   overflow-y: auto;
   width: 100vw;
   height: 100vh;
-  padding: 0 10%;
-  padding-top: 20px;
+  padding: 0 18%;
+  padding-top: 0;
   padding-bottom: 20px;
 }
 
@@ -494,14 +494,14 @@ footer {
 }
 
 .close {
-  font-size: 20px;
-  padding: 20px;
+  font-size: 14px;
+  padding: 10px;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 30px;
+  top: 5px;
   background: #ebecf0;
   mix-blend-mode: multiply;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .popupdiv {
@@ -514,7 +514,7 @@ footer {
   background-color: rgb(255, 255, 255);
   width: 60%;
   height: 90%;
-  padding: 5.5em 1em 0;
+  padding: 3em 1em 0;
   margin: 0;
   margin-bottom: 1em;
   display: flex;
@@ -527,17 +527,17 @@ footer {
 .popup-body {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 10px;
 }
 
 .popup-body img {
   width: 100%;
-  height: 45%;
+  height: 40%;
 }
 
 .popup-body h3 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 44px;
   color: #172b4d;
   margin: 0;
@@ -602,6 +602,7 @@ footer {
   font-size: 16px;
   line-height: 30px;
   color: #344563;
+  margin: 0;
 }
 
 /* small screen details popup */
@@ -853,6 +854,7 @@ footer {
     gap: 1.2em;
     grid-template-columns: 1fr;
     justify-content: center;
+    align-items: center;
   }
 
   /* aboutme background image */
