@@ -435,26 +435,10 @@ input::placeholder {
   font-weight: 500;
 }
 
-/* .success {
-  border: #2ecc71;
-}
-
-.error {
-  border: #e74c3c;
-} */
-
-.fa-exclamation-circle {
+#error {
   color: #e74c3c;
-  visibility: visible;
 }
 
-form i {
-  /* visibility: hidden; */
-}
-
-form small {
-  /* visibility: hidden; */
-}
 
 button {
   background: #36b37f;
