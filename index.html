@@ -127,11 +127,12 @@
         </div>
 <div class="form-container" id="Contact">
     <h4 class="form-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h4>
+    
     <form action="https://formspree.io/f/xrgvbqgv" method="POST" class="form1">
         <input type="text" name="fullname" id="name" placeholder="Full Name" maxlength="30" required>
         <input type="email" name="email" id="email" class="mail" placeholder="Email Address" required>
         <textarea type="text" name="textarea" id="textarea" maxlength="500" placeholder="Enter text here" required></textarea>
-        <small>Error message</small>
+        <small id="error"></small>
         <button type="submit">Get in touch</button>
     </form>
 </div>

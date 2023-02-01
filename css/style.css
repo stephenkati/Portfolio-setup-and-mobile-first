@@ -449,11 +449,11 @@ input::placeholder {
 }
 
 form i {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 form small {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 button {
