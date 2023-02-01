@@ -13,89 +13,157 @@ x.addEventListener('click', () => {
 
 navitem.forEach((n) => n.addEventListener('click', () => menu.classList.remove('show')));
 
-
-
-<div class="details-popup" id="details-popup"></div>
-
-<script>
-    let detailspopup = {
-        card1:{
-        name: 'Tonic',
-        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-        featuredimg: './images/portfolio-pic-1.png',
-        featuredimg2: './images/portfolio-pic-5.png',
-        technologies: ['Html', 'Css', 'Javascript', 'Ruby on rails'],
-        seemore: 'seemore',
-        source: 'source',
-        type: ['Canopy', 'Backend Dev', '2015']
+    let mycards = [
+        {
+            id:'1',
+            name: 'Multi-post stories',
+            title: 'Keeping track of hundreds of components',
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+            featuredimg: './images/detailspopupdesk.png',
+            featuredimg2: './images/detailspopupmobile.png',
+            icon1: './images/seemore.svg',
+            technologies: ['Ruby on rails', 'Css', 'Javascript', 'Html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+            seemore: 'See live',
+            source: 'See source',
         },
-        card2:{
-        name: 'Multi-post stories',
-        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-        featuredimg: './images/portfolio-pic-2.png',
-        featuredimg2: './images/portfolio-pic-6.png',
-        technologies: ['Html', 'Css', 'Javascript', 'Ruby on rails'],
-        seemore: 'seemore',
-        source: 'source',
-        type: ['Canopy', 'Backend Dev', '2015']
+        {
+            id:'2',
+            name: 'Multi-post stories',
+            title: 'Keeping track of hundreds of components',
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+            featuredimg: './images/detailspopupdesk.png',
+            featuredimg2: './images/detailspopupmobile.png',
+            icon1: './images/seemore.svg',
+            technologies: ['Ruby on rails', 'Css', 'Javascript', 'Html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+            seemore: 'See live',
+            source: 'See source',
         },
-        card3:{
-        name: 'Tonic',
-        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-        featuredimg: './images/portfolio-pic-3.png',
-        featuredimg2: './images/portfolio-pic-7.png',
-        technologies: ['Html', 'Css', 'Javascript', 'Ruby on rails'],
-        seemore: 'seemore',
-        source: 'source',
-        type: ['Canopy', 'Backend Dev', '2015']
+        {
+            id:'3',
+            name: 'Multi-post stories',
+            title: 'Keeping track of hundreds of components',
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+            featuredimg: './images/detailspopupdesk.png',
+            featuredimg2: './images/detailspopupmobile.png',
+            icon1: './images/seemore.svg',
+            technologies: ['Ruby on rails', 'Css', 'Javascript', 'Html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+            seemore: 'See live',
+            source: 'See source',
         },
-        card4:{
-        name: 'Multi-post stories',
-        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-        featuredimg: './images/portfolio-pic-4.png',
-        featuredimg2: './images/portfolio-pic-8.png',
-        technologies: ['Html', 'Css', 'Javascript', 'Ruby on rails'],
-        seemore: 'seemore',
-        source: 'source',
-        type: ['Canopy', 'Backend Dev', '2015']
+        {
+            id:'4',
+            name: 'Multi-post stories',
+            title: 'Keeping track of hundreds of components',
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+            featuredimg: './images/detailspopupdesk.png',
+            featuredimg2: './images/detailspopupmobile.png',
+            icon1: './images/seemore.svg',
+            technologies: ['Ruby on rails', 'Css', 'Javascript', 'Html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+            seemore: 'See live',
+            source: 'See source',
+        },
+        {
+            id:'5',
+            name: 'Multi-post stories',
+            title: 'Keeping track of hundreds of components',
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+            featuredimg: './images/detailspopupdesk.png',
+            featuredimg2: './images/detailspopupmobile.png',
+            icon1: './images/seemore.svg',
+            technologies: ['Ruby on rails', 'Css', 'Javascript', 'Html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+            seemore: 'See live',
+            source: 'See source',
+        },
+        {
+            id:'6',
+            name: 'Multi-post stories',
+            title: 'Keeping track of hundreds of components',
+            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+            featuredimg: './images/detailspopupdesk.png',
+            featuredimg2: './images/detailspopupmobile.png',
+            icon1: './images/seemore.svg',
+            technologies: ['Ruby on rails', 'Css', 'Javascript', 'Html', 'Codekit', 'Github', 'Bootstrap', 'Terminal', 'Codepen'],
+            seemore: 'See live',
+            source: 'See source',
         }
-    }
+    ]
 
-    Object.keys(detailspopup).forEach((key) => {
-        document.getElementById("details-popup").innerHTML += '
-        <div class="card1 pos-1">
-            <!--position row 1 for project portfolio image -->
-            <div class="snapshoot-portfolio">
-                <img class="portfolio-mob-img" src="./images/portfolio-pic-1.png" alt="1st-portfolio-photo">
+    // display cards in website refactor
+    let cardlayout= document.querySelector('.card-layout');
+
+    mycards.forEach((project, index) => {
+        // console.log(project.id);
+
+        let card = document.createElement('div');
+        card.classList.add('card');
+
+        let cardbody = document.createElement('div');
+        cardbody.classList.add('card-body');
+
+        cardbody.innerHTML = `
+        <h3 class="card-title">${project.name}</h3>
+        <ul>
+            <li>${project.technologies[0]}</li>
+            <li>${project.technologies[1]}</li>
+            <li>${project.technologies[2]}</li>
+            <li>${project.technologies[3]}</li>
+        </ul>
+        <a href="" class="see-more" >${project.seemore}</a>`
+
+        card.appendChild(cardbody);
+        cardlayout.appendChild(card);
+
+    });
+    
+    mycards.forEach((project, index) => {
+    // details window popup
+    let blurbg = document.createElement('div');
+    blurbg.classList.add('blur');
+
+    let popup = document.createElement('div');
+    popup.classList.add('popupdiv');
+
+    popup.innerHTML = `<div class="details-popup" id="details-popup">
+    <div class="popup-body">
+        <i class="fa-solid fa-x close" id="hidewindow"></i>
+        <img src=${project.featuredimg} alt="picture showing details of my work" class="desktop">
+        <img src=${project.featuredimg2} alt="picture showing details of my work" class="mobile">
+        <div class="title-links">
+            <h3>${project.title}</h3>
+            <div class="links">
+                <a href="#">${project.seemore} <img src=${project.icon1} alt=""> </a>
+                <a href="#">${project.source} <i class="fa-brands fa-github"></i></a>
             </div>
-               <!--position row 2 for project title -->
-                <h2 class="pr-title">
-                    ${detailspopup[key].name}
-                </h2>
-                <!--position row 3 for project class -->
-                <ul class="pr-type">
-                    <li class="no-style"> ${detailspopup[key].type[0]} </li>
-                    <li class="pr-tone"> ${detailspopup[key].type[1]} </li>
-                    <li class="pr-tone"> ${detailspopup[key].type[2]} </li>
-                </ul>    
-                <!--position row 4 for project brief -->
-                <p class="pr-description">
-                    ${detailspopup[key].description}
-                </p>
-                 <!--position row 5 for language tags button name="html" type="button"-->
-                <ul class="pr-button-tag-container no-style">
-                    <li><a href="#" class="pr-button-tag"> ${detailspopup[key].technologies[0]}</a></li>
-                    <li><a href="#" class="pr-button-tag">${detailspopup[key].type[1]}</a></li>
-                    <li><a href="#" class="pr-button-tag">${detailspopup[key].type[2]}</a></li>
-                </ul>
-                 <!--position row 6 for action button -->
-                <div class="pr-call-to-action-box">
-                    <a href="#" class="pr-call-to-action-button"> ${detailspopup[key].seemore}</a>
-                </div>
-                <div class="pr-call-to-action-box">
-                    <a href="#" class="pr-call-to-action-button"> ${detailspopup[key].source}</a>
-                </div>
-        </div>'
-    })
+        </div>
+        <ul>
+        <li>${project.technologies[0]}</li>
+        <li>${project.technologies[1]}</li>
+        <li>${project.technologies[4]}</li>
+        <li>${project.technologies[5]}</li>
+        <li>${project.technologies[2]}</li>
+        <li>${project.technologies[6]}</li>
+        <li>${project.technologies[7]}</li>
+        <li>${project.technologies[8]}</li>
+        </ul>
+        <p>${project.description}</p>
+    </div>
+</div>`
 
-</script>
+blurbg.appendChild(popup);
+cardlayout.appendChild(blurbg);
+});
+
+
+    const blurred= document.querySelector('.blur');
+    const seemore= document.querySelectorAll('.see-more');
+    const hidewindow= document.querySelector('.close');
+
+    seemore.forEach((n) => n.addEventListener('click', (e) => {
+        e.preventDefault();
+        blurred.classList.add('showwindow');
+    }));
+
+    hidewindow.addEventListener('click', (e) => {
+        e.preventDefault();
+        blurred.classList.remove('showwindow');
+    });
