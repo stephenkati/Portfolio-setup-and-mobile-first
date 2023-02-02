@@ -189,25 +189,24 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-//store data in browser
+// store data in browser
 
 const username = document.querySelector('#name');
 const useremail = document.querySelector('#email');
 const text = document.querySelector('#textarea');
 
 form.addEventListener('input', () => {
-
   const formdata = {
     username: username.value,
     useremail: useremail.value,
-    text: text.value
-  }
-  
+    text: text.value,
+  };
+
   localStorage.setItem('data', JSON.stringify(formdata));
 });
 
 const formdataparsed = JSON.parse(localStorage.getItem('data'));
 
-username.value =formdataparsed.username;
-useremail.value =formdataparsed.useremail;
-text.value =formdataparsed.text;
+username.value = formdataparsed.username;
+useremail.value = formdataparsed.useremail;
+text.value = formdataparsed.text;
