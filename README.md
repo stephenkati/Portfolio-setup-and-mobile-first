@@ -279,7 +279,7 @@ https://www.loom.com/share/04dcc64e063248eda0b07a0e4aef6f09
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is <a href="https://github.com/stephenkati/Portfolio-setup-and-mobile-first/blob/master/LICENSE.md"> MIT  licensed.</a>
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 

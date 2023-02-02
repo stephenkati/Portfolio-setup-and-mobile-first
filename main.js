@@ -171,3 +171,20 @@ hidewindow.addEventListener('click', (e) => {
   e.preventDefault();
   blurred.classList.remove('showwindow');
 });
+
+// form validation
+const form = document.querySelector('form');
+const email = document.querySelector('#email');
+const error = document.querySelector('#error');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const emailVal = email.value;
+
+  if (emailVal.toLowerCase() === emailVal) {
+    form.submit();
+  } else {
+    error.innerHTML = 'Email must be in lower case';
+  }
+});
