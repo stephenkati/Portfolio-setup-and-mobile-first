@@ -205,6 +205,11 @@ ul li {
   gap: 6px;
 }
 
+.cardbody-image {
+  width: 100%;
+  height: 228px;
+}
+
 .card-title {
   font-style: normal;
   font-weight: 600;
@@ -484,7 +489,8 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-image: url(/images/Overlay.png);
+  /* background-image: url(/images/Overlay.png); */
+  background-color: rgba(184, 184, 184, 0.623);
   position: fixed;
   top: 0;
   right: 0;
@@ -541,7 +547,7 @@ footer {
 
 .popup-body img {
   width: 100%;
-  height: 40%;
+  height: 70%;
 }
 
 .popup-body h3 {
