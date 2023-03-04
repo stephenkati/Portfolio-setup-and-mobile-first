@@ -18,13 +18,13 @@ const mycards = [
     id: 1,
     name: 'Global Canvas art concert 2015',
     title: 'Global Canvas art concert 2015',
-    description: "Our goal is to bring the beauty and diversity of art to the world by showcasing the work of talented artists from around the globe. Join us for a journey of discovery as we take you on a tour of the galleries, with live events, interactive workshops, and opportunities to connect with the artists.",
+    description: 'Our goal is to bring the beauty and diversity of art to the world by showcasing the work of talented artists from around the globe. Join us for a journey of discovery as we take you on a tour of the galleries, with live events, interactive workshops, and opportunities to connect with the artists.',
     featuredimg: './images/Global-concert/header-concert-desktop.png',
     featuredimg2: './images/Global-concert/header-concert-mobile.png',
     alt: 'Global Canvas art concert 2015',
     icon1: './images/seemore.svg',
     technologies: ['Css', 'Javascript', 'Html'],
-    seemore: "https://stephenkati.github.io/Global-Canvas-Art-Exhibition-Concert-/",
+    seemore: 'https://stephenkati.github.io/Global-Canvas-Art-Exhibition-Concert-/',
     seeproject: 'See Project',
     source: 'https://github.com/stephenkati/Global-Canvas-Art-Exhibition-Concert-',
   },
@@ -32,7 +32,7 @@ const mycards = [
     id: 2,
     name: 'To Do List',
     title: 'To Do List',
-    description: "A To Do List app that lets users create tasks that they would like to do and complete them. Users can add, update, delete, mark as completed and remove completed activities. Build with HTML, CSS and Javascript.",
+    description: 'A To Do List app that lets users create tasks that they would like to do and complete them. Users can add, update, delete, mark as completed and remove completed activities. Build with HTML, CSS and Javascript.',
     featuredimg: './images/Todolist/Todolist-desktop.png',
     featuredimg2: './images/Todolist/Todolist-mobile.png',
     alt: 'To Do List',
@@ -46,7 +46,7 @@ const mycards = [
     id: 3,
     name: 'Awesome books',
     title: 'Awesome books',
-    description: "Awesome books ES6 is a website for listing books and arthurs, it stores data in the local storage. This project uses ES6 and Javascript modules. The website is build with HTML, CSS and Javascript.",
+    description: 'Awesome books ES6 is a website for listing books and arthurs, it stores data in the local storage. This project uses ES6 and Javascript modules. The website is build with HTML, CSS and Javascript.',
     featuredimg: './images/awesome-books/Books-list-desktop.png',
     featuredimg2: './images/awesome-books/Books-list-mobile.png',
     alt: 'Awesome books',
@@ -60,7 +60,7 @@ const mycards = [
     id: 4,
     name: 'My Profile Portfolio',
     title: 'My Profile Portfolio',
-    description: "Portfolio: setup and mobile first is a brief introduction including my name, contact information, and a summary of your skills and experience as a software developer.",
+    description: 'Portfolio: setup and mobile first is a brief introduction including my name, contact information, and a summary of your skills and experience as a software developer.',
     featuredimg: './images/portfolio/header-portfolio-desktop.png',
     featuredimg2: './images/portfolio/header-portfolio-desktop.png',
     alt: 'My Profile Portfolio',
@@ -108,7 +108,7 @@ mycards.forEach((project) => {
 
   const card = document.createElement('div');
   card.classList.add('card');
-  card.innerHTML = `<img src=${project.featuredimg2} alt=${project.alt} class="cardbody-image" >`
+  card.innerHTML = `<img src=${project.featuredimg2} alt=${project.alt} class="cardbody-image" >`;
   const cardbody = document.createElement('div');
   cardbody.classList.add('card-body');
 
@@ -157,7 +157,7 @@ const showProject = (id) => {
         <p>${project.description}</p>
     </div>
 </div>`;
-blurbg.appendChild(popup);
+  blurbg.appendChild(popup);
 };
 
 const blurred = document.querySelector('.blur');
@@ -165,10 +165,10 @@ const blurred = document.querySelector('.blur');
 
 cardlayout.addEventListener('click', (e) => {
   e.preventDefault();
-  if(e.target.tagName === 'A'){
+  if (e.target.tagName === 'A') {
     const link = e.target;
     const id = link.getAttribute('id');
-    showProject(id)
+    showProject(id);
     blurred.classList.add('showwindow');
   }
 });
@@ -185,7 +185,6 @@ cardlayout.addEventListener('click', (e) => {
 //     console.log('close');
 //   }
 // });
-
 
 // mycards.forEach((project) => {
 //   // details window popup
